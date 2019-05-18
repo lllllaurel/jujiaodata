@@ -19,6 +19,9 @@ import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+def applications(request):
+    return render(request, 'application.html', {})
+
 def admin(request):
     if not checkLoginStatus(request):
         return HttpResponseRedirect('/login/')

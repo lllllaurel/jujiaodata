@@ -1,4 +1,4 @@
-{% extends 'basic.html' %}
+{% extends 'basic_M.html' %}
 {%block title%}Regist{%endblock%}
 {%block content%}
 <div class="login-container">
@@ -7,7 +7,7 @@
 	{% csrf_token %}
 	{{userform.as_p}}
 	<button type="submit" class="btn btn-info" style="margin-right: 20px">regist</button>
-	<a href="/login">已有账号,登录</a>
+	<a href="/apps/login">已有账号,登录</a>
 	</form>
 </div>
 {%endblock%}

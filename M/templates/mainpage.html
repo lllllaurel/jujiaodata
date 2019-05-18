@@ -1,4 +1,4 @@
-{% extends 'basic.html' %}
+{% extends 'basic_M.html' %}
 {%block title%}Mainpage{%endblock%}
 {%block content%}
 
@@ -10,7 +10,7 @@
 </div>
 
 <div class="content-holder">
-	<form action="/record/" method="POST">
+	<form action="/apps/record/" method="POST">
 	{% csrf_token %}
 	<div class="ch-left">
 		<div class="form-group">

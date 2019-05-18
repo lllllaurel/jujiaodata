@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	responseConsequence = {};
-	$.get('/getword/',{cnt:0},function(data){
+	$.get('/apps/getword/',{cnt:0},function(data){
 		wordObj = data;
+		console.log(wordObj);
 		$('#bb-show').append("<div>"+data['ch'][0]+"</div>");
 		$('#blackboard').attr('myAttr','0');
 		globalCnt=0;
@@ -23,7 +24,7 @@ $(document).ready(function(){
 			var cnt_s = cnt.toString();
 			$('#blackboard').attr('myAttr',cnt_s);
 			calculate();
-			$.get('/getword/',{cnt:cnt},function(data){
+			$.get('/apps/getword/',{cnt:cnt},function(data){
 				wordObj=data;
 			});
 			globalCnt=0;
@@ -66,5 +67,5 @@ function addIn(ipt){
 
 function calculate(){
 	var resp_json = JSON.stringify(responseConsequence);
-	$.get('/calculate/',{consequence:resp_json},function(data){});
+	$.get('/apps/calculate/',{consequence:resp_json},function(data){});
 }

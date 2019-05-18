@@ -8,34 +8,34 @@
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/">单词录入 </a>
+        <a class="nav-link" href="/apps/">单词录入 </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/exam/">听写本 </a>
+        <a class="nav-link" href="/apps/exam/">听写本 </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/print/">查阅单词本 </a>
+        <a class="nav-link" href="/apps/print/">查阅单词本 </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/bugs/">BUG反馈 </a>
+        <a class="nav-link" href="/apps/bugs/">BUG反馈 </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about/">关于 </a>
-      </li>
+{#      <li class="nav-item">#}
+{#        <a class="nav-link" href="/apps/about/">关于 </a>#}
+{#      </li>#}
       {% if needlogin %}
   		<li class="nav-item">
-  			<a class="nav-link" href="/login/">登录 </a>
+  			<a class="nav-link" href="/apps/login/">登录 </a>
   		</li>
   		<li class="nav-item">
-  			<a class="nav-link" href="/regist/">注册 </a>
+  			<a class="nav-link" href="/apps/regist/">注册 </a>
   		</li>
       {% else %}
   		<li class="nav-item">
-  			<a class="nav-link" href="/logout/">注销 </a>
+  			<a class="nav-link" href="/apps/logout/">注销 </a>
   		</li>
 	    {% endif %}
     </ul>
-    <form class="form-inline" action="/trans/" method="GET">
+    <form class="form-inline" action="/apps/trans/" method="GET">
       <input class="form-control mr-sm-2" type="search" placeholder="Online Dictionary" name="target" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Look Up</button>
     </form>
