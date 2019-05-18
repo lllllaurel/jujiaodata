@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    print('fsromo extern')
+    print('s')
+    print('ss')
+    print('sss')
+    print('ssssss')
+    print('dddd')
+    print('dsds')
+
+
+
+
+
+
+
+

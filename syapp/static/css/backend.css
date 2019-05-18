@@ -1,0 +1,67 @@
+body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, i, li, ol, p, ul {
+    margin: 0;
+    padding: 0;
+}
+#footer {
+    position: fixed;
+    background-color: rgba(43, 166, 166, 0.5);
+    color: #FFF;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+.body-select {
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}
+.query-body {
+    width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pt-console{
+    width: 900px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pt-layout {
+    width: 500px;
+    height: 338px;
+    padding: 5px;
+    float: left;
+    background-color: black;
+    color: green;
+}
+.pt-input {
+    width: 400px;
+    height: 300px;
+    float: right;
+}
+.pt-input button{
+    float: right;
+}
+.input-group-text{
+    cursor: pointer;
+}
+.catelog{
+    cursor: pointer;
+}
+#textarea-holder{
+    width: 900px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#textarea-holder textarea{
+    margin-left: auto;
+    margin-right: auto;
+}
